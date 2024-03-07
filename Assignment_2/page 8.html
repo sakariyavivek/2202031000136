@@ -1,0 +1,33 @@
+<div class="div">
+  <img
+    loading="lazy"
+    srcset="..."
+    class="img"
+  />
+</div>
+<style>
+  .div {
+    justify-content: center;
+    background-color: #685d5d;
+    display: flex;
+    flex-direction: column;
+    padding: 32px 44px;
+  }
+  @media (max-width: 991px) {
+    .div {
+      padding: 0 20px;
+    }
+  }
+  .img {
+    aspect-ratio: 1.41;
+    object-fit: auto;
+    object-position: center;
+    width: 100%;
+    box-shadow: 30px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  @media (max-width: 991px) {
+    .img {
+      max-width: 100%;
+    }
+  }
+</style>
